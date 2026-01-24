@@ -1,110 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashwini Ajgekar | Portfolio</title>
-  <style>
+	<head>
+		  <meta charset="UTF-8" />
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		      <title>Employee Portal</title>
+		        <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 30px 20px;
-      margin: 20px auto;
-      max-width: 900px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2c3e50;
-    }
-    ul {
-      line-height: 1.8;
-    }
-    .skills span {
-      display: inline-block;
-      background: #3498db;
-      color: #fff;
-      padding: 6px 12px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #2c3e50;
-      color: #fff;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
+	          margin: 0;
+		        font-family: Arial, Helvetica, sans-serif;
+			      background: #f4f6f8;
+			          }
+        header {
+		      background: #0a66c2;
+		            color: white;
+			          padding: 16px 24px;
+				        display: flex;
+					      justify-content: space-between;
+					            align-items: center;
+						        }
+	    nav a {
+		          color: white;
+			        margin-left: 16px;
+				      text-decoration: none;
+				            font-weight: 500;
+					        }
+	        .container {
+			      padding: 24px;
+			          }
+		    .cards {
+			          display: grid;
+				        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+					      gap: 16px;
+					          }
+		        .card {
+				      background: white;
+				            border-radius: 8px;
+					          padding: 20px;
+						        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+							    }
+			    .card h3 {
+				          margin-top: 0;
+					        color: #0a66c2;
+						    }
+			        table {
+					      width: 100%;
+					            border-collapse: collapse;
+						          margin-top: 16px;
+							        background: white;
+								    }
+				    table th, table td {
+					          padding: 12px;
+						        border-bottom: 1px solid #ddd;
+							      text-align: left;
+							          }
+				        table th {
+						      background: #f0f2f5;
+						          }
+					    footer {
+						          text-align: center;
+							        padding: 16px;
+								      color: #777;
+								          }
+					      </style>
+	</head>
+	<body>
+		  <header>
+			      <h2>Employee Portal</h2>
+			          <nav>
+					        <a href="#dashboard">Dashboard</a>
+						      <a href="#employees">Employees</a>
+						            <a href="#leave">Leave</a>
+							          <a href="#profile">Profile</a>
+								      </nav>
+								        </header>
 
-  <header>
-    <h1>Ashwini Ajgekar</h1>
-    <p>DevOps Engineer | Cloud & Automation Enthusiast</p>
-  </header>
+									  <div class="container" id="dashboard">
+										      <h2>Dashboard</h2>
+										          <div class="cards">
+												        <div class="card">
+														        <h3>Total Employees</h3>
+															        <p>120</p>
+																      </div>
+																            <div class="card">
+																		            <h3>Present Today</h3>
+																			            <p>98</p>
+																				          </div>
+																					        <div class="card">
+																							        <h3>On Leave</h3>
+																								        <p>22</p>
+																									      </div>
+																									          </div>
+																										    </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a DevOps student with hands-on knowledge of CI/CD pipelines, cloud platforms, and automation tools. 
-      I am passionate about improving deployment processes and system reliability.
-    </p>
-  </section>
+																										      <div class="container" id="employees">
+																											          <h2>Employee List</h2>
+																												      <table>
+																													            <thead>
+																															            <tr>
+																																	              <th>Name</th>
+																																		                <th>Department</th>
+																																				          <th>Role</th>
+																																					            <th>Status</th>
+																																						            </tr>
+																																							          </thead>
+																																								        <tbody>
+																																										        <tr>
+																																												          <td>Ashwini Ajgekar</td>
+																																													            <td>Engineering</td>
+																																														              <td>Frontend Developer</td>
+																																															                <td>Active</td>
+																																																	        </tr>
+																																																		        <tr>
+																																																				          <td>Rahul Sharma</td>
+																																																					            <td>HR</td>
+																																																						              <td>HR Manager</td>
+																																																							                <td>Active</td>
+																																																									        </tr>
+																																																										        <tr>
+																																																												          <td>Pooja Patel</td>
+																																																													            <td>Finance</td>
+																																																														              <td>Accountant</td>
+																																																															                <td>On Leave</td>
+																																																																	        </tr>
+																																																																		      </tbody>
+																																																																		          </table>
+																																																																			    </div>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Linux</span>
-      <span>Git & GitHub</span>
-      <span>Jenkins</span>
-      <span>Docker</span>
-      <span>Kubernetes</span>
-      <span>AWS</span>
-      <span>CI/CD</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>CI/CD Pipeline:</strong> Implemented Jenkins pipeline for automated build and deployment.</li>
-      <li><strong>Dockerized Application:</strong> Containerized a web application using Docker.</li>
-      <li><strong>AWS Deployment:</strong> Deployed application on EC2 with security groups and IAM roles.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p>Bachelor's Degree / DevOps Training Program</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: ashwini@example.com</p>
-    <p>LinkedIn: linkedin.com/in/ashwini-ajgekar</p>
-    <p>GitHub: github.com/ashwini-ajgekar</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Ashwini Ajgekar. All Rights Reserved.</p>
-  </footer>
-
-</body>
+																																																																			      <footer>
+																																																																				          © 2026 Employee Portal. All rights reserved.
+																																																																					    </footer>
+	</body>
 </html>
+
